@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BAMU Well-Being Foundation</title>
+  <meta name="description" content="Améliorer la qualité de vie des personnes vulnérables grâce à un appui psychosocial inclusif.">
+  <!-- Tailwind via CDN pour démarrer vite -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col font-sans bg-gray-50">
+  <!-- Header -->
+  <header class="bg-blue-800 text-white">
+    <div class="max-w-5xl mx-auto flex items-center justify-between p-4">
+      <div class="text-xl font-bold">BAMU WBF</div>
+      <nav class="hidden md:flex gap-6">
+        <a href="index.html" class="hover:underline">Accueil</a>
+        <a href="about.html" class="hover:underline">À propos</a>
+        <a href="programs.html" class="hover:underline">Actions</a>
+        <a href="join.html" class="hover:underline">S'impliquer</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden">
+        <span class="sr-only">Ouvrir le menu</span>
+        ☰
+      </button>
+    </div>
+    <!-- mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-blue-700">
+      <div class="flex flex-col p-4 gap-2">
+        <a href="index.html" class="block hover:underline">Accueil</a>
+        <a href="about.html" class="block hover:underline">À propos</a>
+        <a href="programs.html" class="block hover:underline">Actions</a>
+        <a href="join.html" class="block hover:underline">S'impliquer</a>
+        <a href="contact.html" class="block hover:underline">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+ <main class="flex-grow">
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-5xl mx-auto px-4">
+      <h1 class="text-3xl font-bold mb-6 text-center">Nos actions</h1>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow p-4">
+          <h3 class="font-semibold">Santé mentale</h3>
+          <p class="text-sm">Appui individuel, médiation familiale, sensibilisation.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-4">
+          <h3 class="font-semibold">Inclusion sociale</h3>
+          <p class="text-sm">Renforcement des capacités et accès équitable.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-4">
+          <h3 class="font-semibold">Réinsertion</h3>
+          <p class="text-sm">Autonomisation socio-économique.</p>
+        </div>
+        <!-- tu peux ajouter d'autres cartes ici -->
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-6">
+      <div>
+        <h4 class="font-bold mb-2">BAMU Well-Being Foundation</h4>
+        <p>Association dédiée au bien-être psychosocial. Adresse : Kinshasa / Kindu (à préciser).</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">S’impliquer</h4>
+        <p>Devenir membre, faire un don, ou devenir bénévole.</p>
+        <p class="text-sm mt-2">&copy; 2025 BAMU Well-Being Foundation. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // menu mobile
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
